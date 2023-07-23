@@ -43,7 +43,7 @@ if so follow these steps to contineu
 <?php
 
 use N_Gin\encrypt;
-$data 'your data';
+$data = 'your data';
 
 $encrypted_data = encrypt::run($key, $datas);
 ```
