@@ -51,7 +51,7 @@ $encrypted_data = encrypt::run($key, $datas);
 as following as encryption method decryption requires a key as the
 <a href='#how-to-set-key'>following</a>
 
-**use the smae key to decrypt or the data will be corrupted**
+**use the same key to decrypt or the data will be corrupted**
 
 
 
@@ -63,7 +63,7 @@ and then follow these steps to decrypt
 use N_Gin\decrypt;
 
 
-$decrypted_data = encrypt::run($key, $$encrypted_data);
+$decrypted_data = decrypt::run($key, $encrypted_data);
 ```
 
 #### if you want to echo|show in a manner that html won't be effected use
