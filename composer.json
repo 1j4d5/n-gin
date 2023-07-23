@@ -1,0 +1,22 @@
+{
+    "name": "1j4d5/n-gin",
+    "description": "n-gin is a PHP library to make encryption to another level and a exponential  secure manner that the encode is impossible to break without an key",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "N_Gin\\": "src/"
+        },
+        "files": [
+            "src/n-gin_AddAll.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "1j4d5",
+            "email": "ijads.main@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {}
+}

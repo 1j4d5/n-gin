@@ -4,7 +4,14 @@
 ---
 
 ### n-gin can encrypt your data and also decrypt.
-# how to enctypt 
+# how to set key 
+first create a directory to store your key, the directory must have to be a **protected directory** which mean it should not be visible to the public.
+
 ```php
 <?php
+
+require 'vendor/autoload.php';
+
+use N_Gin\key;
+
 ```
