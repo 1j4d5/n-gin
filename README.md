@@ -34,9 +34,9 @@ $key = key::get('keys/key');
 ```
 # how to encrypt a string of data
 At first you sould create an key as the 
-
 <a href='#how-to-set-key'>following</a>
 
+***-***
 if so follow these steps to contineu
 
 ```php
