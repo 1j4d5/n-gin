@@ -16,6 +16,10 @@ cd your_project
 md keys
 ```
 and then create a file in the directory just created, the file does not need to have a certain file type, you can keep the file without any file type as recomended.
+
+<img scr='https://raw.githubusercontent.com/1j4d5/1j4d5/main/n-gin_example1.png'>
+
+
 ```php
 <?php
 
