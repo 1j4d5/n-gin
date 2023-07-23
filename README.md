@@ -4,6 +4,7 @@
 ---
 
 ### n-gin can encrypt your data and also decrypt.
+remember to use vendor folders
 # how to set key 
 first create a directory to store your key, the directory must have to be a **protected directory** which mean it should not be visible to the public.
 
@@ -30,4 +31,46 @@ use N_Gin\key;
 #the file directory is writen in the parrams
 $key = key::get('keys/key');
 
+```
+# how to encrypt a string of data
+At first you sould create an key as the 
+
+<a href='#how-to-set-key'>following</a>
+
+if so follow these steps to contineu
+
+```php
+<?php
+
+use N_Gin\encrypt;
+$data 'your data';
+
+$encrypted_data = encrypt::run($key, $datas);
+```
+# how to decrypt a string of data
+as following as encryption method decryption requires a key as the
+<a href='#how-to-set-key'>following</a>
+
+**use the smae key to decrypt or the data will be corrupted**
+
+
+
+and then follow these steps to decrypt
+
+```php
+<?php
+
+use N_Gin\decrypt;
+
+
+$decrypted_data = encrypt::run($key, $$encrypted_data);
+```
+
+#### if you want to echo|show in a manner that html won't be effected use
+```php
+<?php
+
+use N_Gin\crypt;
+
+echo 'your en|decrypted data :' . crypt::run($encrypted_data | $decrypted_data);
 ```

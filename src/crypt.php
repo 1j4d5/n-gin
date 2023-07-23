@@ -2,7 +2,11 @@
 namespace N_Gin;
 class crypt extends n_Gingene
 {
-    
+    public static function show(mixed $data):string
+    {
+        
+        return htmlentities(''.$data.'', ENT_HTML401);
+    }
     protected static function encrypt(mixed $key, mixed $data):string
     {
         $em5mU3Q4cERRTyt6dGJudTY4b2t0UT09OjrLa6QBm8kmhIej9gseC70c = base64_decode($key);$NDhtRGp3SXUzaGl3K2tidHhsazdwQT09OjpW8jRfgqB08Ze4hkV437YH=openssl_random_pseudo_bytes(openssl_cipher_iv_length('aes-128-cbc'));$Vk11dmc5UFdTWHhFcTYzS1B3SFIydz09OjodWeVwdUPi35qJAAhle5K4=openssl_encrypt($data, 'aes-128-cbc', $em5mU3Q4cERRTyt6dGJudTY4b2t0UT09OjrLa6QBm8kmhIej9gseC70c, 0, $NDhtRGp3SXUzaGl3K2tidHhsazdwQT09OjpW8jRfgqB08Ze4hkV437YH);return base64_encode($Vk11dmc5UFdTWHhFcTYzS1B3SFIydz09OjodWeVwdUPi35qJAAhle5K4 . '::' . $NDhtRGp3SXUzaGl3K2tidHhsazdwQT09OjpW8jRfgqB08Ze4hkV437YH);
