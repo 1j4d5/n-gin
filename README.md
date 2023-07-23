@@ -11,7 +11,7 @@ in the console:
 cd your_project
 md keys
 ```
-and then create a file in the directory just created the file does not need to have a certain file type u can keep the file without any file type.
+and then create a file in the directory just created, the file does not need to have a certain file type, you can keep the file without any file type as recomended.
 ```php
 <?php
 
