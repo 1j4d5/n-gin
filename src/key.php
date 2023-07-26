@@ -1,12 +1,13 @@
 <?php
 namespace N_Gin;
+use encrypt;
 class key extends n_Gingene
 {
-    public static function get($directory) {
-        $file = fopen( $directory, "r" );
+   public function __construct($directory){
+      $file = fopen( $directory, "r" );
          
          if( $file == false ) {
-            echo ( "Error in opening file" );
+            echo ( "<b>Fatal Error</b>: wrong input<b> ".__file__."</b> on line: <b>0</b> error code: <b>5986567</b>" );
             exit();
          }
          
@@ -14,11 +15,16 @@ class key extends n_Gingene
          if ($filesize > 0) {
             $filetext = fread( $file, $filesize );
          }else{
-            echo ( "Error: key cannot be empty" );
+            echo ( "<b>Fatal Error</b>: key cannot be empty in file<b> ".__file__."</b> on line: <b>0</b> error code: <b>5974876</b>" );
             $filetext = null;
+            exit();
          }
          
          fclose( $file );
-         return $filetext;
+         $this->key =$filetext;
+         
+   }
+    public function give() {
+        return $this->key ;
     }
 }
