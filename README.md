@@ -72,5 +72,5 @@ $decrypted_data = decrypt::run($key, $encrypted_data);
 
 use N_Gin\crypt;
 
-echo 'your en|decrypted data :' . crypt::run($encrypted_data | $decrypted_data);
+echo 'your en|decrypted data :' . crypt::show($encrypted_data | $decrypted_data);
 ```
