@@ -27,4 +27,8 @@ class key extends n_Gingene
     public function give() {
         return $this->key ;
     }
+    public static function get() {
+      echo ( "<b>Fatal Error</b>: key :: get have been replaced <b> </b>  error code: <b>7897887</b>" );
+            
+  }
 }
