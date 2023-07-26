@@ -9,7 +9,10 @@
     "autoload": {
         "psr-4": {
             "N_Gin\\": "src/"
-        }
+        },
+        "files": [
+            "src/n-gin_AddAll.php"
+        ]
     },
     "authors": [
         {
