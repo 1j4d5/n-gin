@@ -82,6 +82,8 @@ echo 'your en|decrypted data :' . crypt::show($encrypted_data | $decrypted_data)
 |    |  **≤6**  |  36  |
 |    |  **≤9**  |  40  |
 |    |  **≤12**  |  48  |
+|    |  **≤15**  |  52  |
+|    |  **≤18**  |  56  |
 
 
 to be continiued 
