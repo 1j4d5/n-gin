@@ -74,3 +74,13 @@ use N_Gin\crypt;
 
 echo 'your en|decrypted data :' . crypt::show($encrypted_data | $decrypted_data);
 ```
+## how the encryption size works
+|    |  data string  |  encripted  |
+|------|------|------|
+|  digits  |  **≤3**  |  32  |
+|  ~~~~~~  |  **≤6**  |  36  |
+|  ~~~~~~  |  **≤9**  |  40  |
+|  ~~~~~~  |  **≤12**  |  48  |
+
+
+to be continiued 
