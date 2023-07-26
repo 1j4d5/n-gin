@@ -29,7 +29,8 @@ require 'vendor/autoload.php';
 use N_Gin\key;
 
 #the file directory is writen in the parrams
-$key = key::get('keys/key');
+$key = new key('keys/key');
+$key = $key->give(); 
 
 ```
 # how to encrypt a string of data
